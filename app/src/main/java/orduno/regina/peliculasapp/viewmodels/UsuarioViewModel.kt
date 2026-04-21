@@ -19,4 +19,12 @@ class UsuarioViewModel(val repo: Repositorio): ViewModel() {
         _usuarios.value = repo.getUsuarios()
     }
 
+    fun agregarUsuario(nombre: String, correo: String, edad: Int){
+        val nuevoID = usuarios.value.size + 1
+        val usu = Usuario(nuevoID, nombre, correo, edad)
+        repo.agregarUsuario(usu)
+
+        _usuarios.value = repo.getUsuarios()
+    }
+
 }

@@ -56,47 +56,47 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        Toast.makeText(this, "Start", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Start")
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        Toast.makeText(this, "Resume", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Resume")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-
-        Toast.makeText(this, "Destroy", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Destroy")
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-        Toast.makeText(this, "Stop", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Stop")
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        Toast.makeText(this, "Pause", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Pause")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-
-        Toast.makeText(this, "Restart", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Restart")
-    }
+//    override fun onStart() {
+//        super.onStart()
+//
+//        Toast.makeText(this, "Start", Toast.LENGTH_SHORT).show()
+//        Log.d(TAG, "Start")
+//    }
+//
+//    override fun onResume() {
+//        super.onResume()
+//
+//        Toast.makeText(this, "Resume", Toast.LENGTH_SHORT).show()
+//        Log.d(TAG, "Resume")
+//    }
+//
+//    override fun onDestroy() {
+//        super.onDestroy()
+//
+//        Toast.makeText(this, "Destroy", Toast.LENGTH_SHORT).show()
+//        Log.d(TAG, "Destroy")
+//    }
+//
+//    override fun onStop() {
+//        super.onStop()
+//
+//        Toast.makeText(this, "Stop", Toast.LENGTH_SHORT).show()
+//        Log.d(TAG, "Stop")
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//
+//        Toast.makeText(this, "Pause", Toast.LENGTH_SHORT).show()
+//        Log.d(TAG, "Pause")
+//    }
+//
+//    override fun onRestart() {
+//        super.onRestart()
+//
+//        Toast.makeText(this, "Restart", Toast.LENGTH_SHORT).show()
+//        Log.d(TAG, "Restart")
+//    }
 }
 
 @Composable
