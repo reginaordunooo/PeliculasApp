@@ -34,4 +34,11 @@ class PeliculaViewModel (val repo: PeliculaRepositorio): ViewModel(){
         _peliculas.value = repo.getPeliculas()
     }
 
+    fun editarPelicula(id: Int, nombre: String, director: String, año: Int, genero: String, fotoUri: String?){
+        val peli = Pelicula(id, nombre, director, año, genero, R.drawable.bootstrap_person_circle, fotoUri)
+        repo.editarPelicula(peli)
+
+        _peliculas.value = repo.getPeliculas()
+    }
+
 }
